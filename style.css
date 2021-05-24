@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+body{
+  height:100vh;
+  display:flex;
+  place-content-center;
+  
+  background:radial-gradient(white 50%, orange);
+    background:linear-gradient(90deg, orange 60%, darkorange 30%);
+
+}
+
+#quote-box{
+  width:60vw;
+  margin:auto auto;
+  background:linear-gradient(90deg, #ffffff30, #ffffff60);
+  position:relative;
+  justify-self:center;
+  text-align:center;
+  border-radius:1rem 2rem;
+  padding:2em;
+}
+#quote-box::before{
+  content:'';
+  backdrop-filter:blur(50px);
+  
+}
+#text{
+  padding:1rem;
+  font-size:1.9rem;
+  font-family:'Oswald',sans-serif;
+  
+  text-shadow:-1px 1px black;
+  
+}
+
+
+
+#author{
+  font-family:'Open sans', sans-serif;
+  font-weight:400;
+  padding-left:30%;
+  margin-bottom:1.3rem;
+  font-size:1.2em;
+    text-shadow:-1px 1px black;
+  letter-spacing:0.08rem;
+
+}
+
+#text,#author{
+  color:white;
+}
+
+#tweet-quote, fa, fa-twitter-square{
+  position:relative;
+  margin-left:9rem;
+  top:0.75rem;
+  font-size:3rem;
+  
+  padding:inset;
+  
+  
+}
+
+#new-quote{
+  margin:0 1rem 1.4rem 1rem;
+  height:3rem;
+  padding:0.6rem;
+  border-radius:10px;
+  border:1px solid transparent;
+  background:#0000EE;
+  color:white;
+  font-family:'Open sans';
+  font-size:1rem;
+}
+
+span{
+  padding:1%;
+}
+
+@media (max-width:580px){
+	#tweet-quote, fa, fa-twitter-square{
+		margin-left:3.5rem;
+		font-size:2.6rem;
+		align-content:center;
+	}
+	
+	#new-quote{
+		max-width:5rem;
+	}
+	
+	
+}
+
+@media(max-width:360px){
+	#new-quote{
+		content:'';
+	}
+	
+	#tweet-quote, fa, fa-twitter-square{
+		margin-left:1.6rem;
+		font-size:2.4rem;
+		align-content:center;
+	}
+	
+	#new-quote{
+		max-width:4rem;
+	}
+	
+}
