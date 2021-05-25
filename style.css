@@ -20,11 +20,7 @@ body{
   border-radius:1rem 2rem;
   padding:2em;
 }
-#quote-box::before{
-  content:'';
-  backdrop-filter:blur(50px);
-  
-}
+
 #text{
   padding:1rem;
   font-size:1.9rem;
@@ -96,16 +92,19 @@ span{
 	#new-quote{
 		justify-content:center;
 		align-conter:center;
+		transform:scale(0.92);
+		margin:auto;
+		font-size:0.85rem;
 	}
 	
 	#tweet-quote, fa, fa-twitter-square{
-		margin:auto;
+		margin-right:auto;
+		margin-left:auto;
+
 		font-size:2.6rem;
 		align-content:center;
 	}
 	
-	#new-quote{
-		margin:auto;
-	}
+	
 	
 }
