@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  let url = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
+  let url = 'https://gist.githubusercontent.com/vinyl704/4634c6cb599411bdaf39d6f808aed7fb/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
   let quoteText = document.getElementById('text');
 
   let newQuote = document.getElementById('new-quote');
@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //updating view
         quoteText.textContent = randQuote;
-        author.textContent = "-" + randAuthor.substr(1, randAuthor.length - 2);
+        author.textContent = " -" + randAuthor.substr(1, randAuthor.length - 2);
       });
       quoteText.textContent = randQuote;
-      author.textContent = "-" + randAuthor.substr(1, randAuthor.length - 2);
+      author.textContent = " -" + randAuthor.substr(1, randAuthor.length - 2);
     }
 
     let stub = "https://www.twitter.com/intent/tweet?text=" + randQuote + author.textContent;
